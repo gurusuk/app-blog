@@ -78,3 +78,16 @@ You should see the home page of the blog
 Enter the following the command to destroy all resources that were created in step 7
 
 terraform destroy -var "aws_access_key=<access key>" -var "aws_secret_key=<your secret key>" -var "key_name=<your AWS key pair name>"
+
+10)
+To scale up/down EC2 instances, change values of the variables asg_min, asg_max, asg_required for Auto scaling configuration
+For example: To increase number of instances running from 1 to 2 :
+
+asg_min - 1
+asg_max - 2
+asg_required from 1 to 2 
+
+execute terraform apply command. It will change desired_capacity: "1" => "2"
+
+11)
+If a running instance goes down, new instance will be automatically launched as per configuration defined in ASG
