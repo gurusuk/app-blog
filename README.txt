@@ -50,6 +50,7 @@ Open a new command promt (or ssh session) and execute the command "terraform -v"
 
 3)
 Pull scripts from git repository https://github.com/gurusuk/app-blog.git
+For example: git clone https://github.com/gurusuk/app-blog.git . for copying files into local folder of choice
 
 4)
 Open a command prompt window or shell and change directory to the local git repository location 
